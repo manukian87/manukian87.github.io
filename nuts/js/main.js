@@ -3,9 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const tabsWrapper = document.querySelector('.catalog__tabs'),
         tabs = document.querySelectorAll('.catalog__tabs_item'),
-        content = document.querySelectorAll('#catalog'),
-        nuts = document.querySelectorAll('.catalog__card'),
-        price1 = document.querySelector('#price1');
+        content = document.querySelectorAll('.catalog__card-item'),
+        nuts = document.querySelectorAll('.catalog__card');
     let tabweigth = document.querySelectorAll('.catalog__card_weight-item'),
         price = document.querySelectorAll('.price'),
         weightWrapper = document.querySelectorAll('.catalog__card_weight-wrapper');
@@ -57,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
  
   
     function hidePrice() {
-        tabweigth.forEach(item => {
+        tabweigth.forEach((item) => {
             item.classList.remove('active-min');
             
         });
@@ -265,11 +264,11 @@ window.addEventListener('DOMContentLoaded', () => {
                 <div class="catalog__card_price title title_fz22"> 
                     <div class="catalog__card_price-title">Цена</div>
                     <div class="catalog__card_price-total">
-                        <span class="price show" id="price1">${this.price1}</span>
-                        <span class="price hide" id="price2">${this.price2}</span>
-                        <span class="price hide" id="price3">${this.price3}</span>
-                        <span class="price hide" id="price4">${this.price4}</span>
-                        <span class="price hide" id="price5">${this.price5}</span>
+                        <span class="price show">${this.price1}</span>
+                        <span class="price hide">${this.price2}</span>
+                        <span class="price hide">${this.price3}</span>
+                        <span class="price hide">${this.price4}</span>
+                        <span class="price hide">${this.price5}</span>
                         <div class="catalog__card_price_descr">грн. </div>
                     </div>
 
